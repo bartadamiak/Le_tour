@@ -5,8 +5,8 @@ $bp : 768px;
 .container {
   .row {
     [class^="col-"] {
-      padding-left: $gap;
-      padding-right: $gap;
+      // padding-left: $gap;
+      // padding-right: $gap;
       box-sizing: border-box;
       // margin-bottom: 2*$gap;
     }

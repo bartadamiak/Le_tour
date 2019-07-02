@@ -9,9 +9,16 @@
 
 .header {
     width: 100%;
-    // position: fixed;
-}
     
+}
+
+.sticky {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2222222222222;
+}
+ 
 .header-top {
 
     width: 100%;
@@ -127,6 +134,11 @@
 
 /////////////////
 
+.photos {
+    padding-top: 8em;
+}
+
+
 .background-photos {
     width: 100%;
     height: 500px;
@@ -204,4 +216,118 @@
     p {
         display: block;
     }
+}
+
+///////////////////////////
+
+
+.square {
+    width: 100%;
+   
+}
+
+.yellow-square {
+    background: $darkerYellow;
+}
+
+.squares {
+    margin-top: 5em;
+    width: 100%;
+   
+   
+}
+
+.news-title {
+    text-align: center;
+    margin-bottom: 2em;
+    
+}
+
+.square {
+    height: 100%;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.news-square {
+    padding: 0.8em;
+    cursor: pointer;
+    
+    div {
+        margin: 0.8em 1em;
+    }
+    .news-title {
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .news-text {
+        font-size: 0.7em;
+    }
+    .news-button {
+        border: 1px solid black;
+        background: none;
+        padding: 0.7em 1em;
+        margin-left: 60%;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .news-button:hover {
+        background: $yellow;
+        border: 1px solid $yellow;
+    }
+}
+
+.yellow-square {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    
+    img {
+        padding-top: 2em;
+        width: 40%;
+    }
+    .img-text {
+        font-size: 1.6em;
+        padding: 1em;
+        text-align: center;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
+
+// .yellow-square:hover, .news-square:hover {
+//     border: 1px solid $darkerYellow;
+// }
+
+.fan-square {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    img {
+        padding-top: 2em;
+        width: 40%;
+        display: block;
+    }
+    .fan-text {
+        background: $yellow;
+        font-size: 1.9em;
+        text-transform: uppercase;
+        transform: rotate(-17deg);
+        position: relative;
+        top: -1.5em;
+        right: -2.9em;
+        font-weight: 700;
+        padding: 0.1em;
+    }
+}
+
+.grey {
+    color: $grey;
 }
