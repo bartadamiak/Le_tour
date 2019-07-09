@@ -1,0 +1,39 @@
+.follow-us {
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.follow-us-box {
+    .follow-us-title {
+        text-align: center;
+    }
+
+    .title-description {
+        display: block;
+        text-align: center;
+        font-size: 0.9em;
+        margin: 1em;
+        color: rgb(127,127,127);
+    }
+}
+
+.icons-box {
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    
+    div {
+        display: inline-box;
+        margin: 1em;
+        width: 16.666%;
+       
+        cursor: pointer;
+       #d {
+           font-size: 2em;
+           text-decoration: none;
+           font-weight: 600;
+       }
+    }
+}

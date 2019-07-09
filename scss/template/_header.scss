@@ -1,0 +1,124 @@
+.header {
+    width: 100%;
+    
+}
+
+.sticky {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2222222222222;
+}
+ 
+.header-top {
+
+    width: 100%;
+    background: black;
+
+    ul {
+        color: white;
+        display: flex;
+        font-size: 0.6em;
+        list-style: none;
+        text-transform: uppercase;
+        font-weight: 900;
+        height: 100%;
+
+        li {
+            cursor: pointer;
+            padding: 2% 2%;
+            display: flex;
+            align-items: center;
+            transition: 0.5s;
+
+            p {
+                display: inline-block;
+
+            }
+
+        }
+
+        li:hover {
+            background: $yellow;
+            color: black;
+        }
+    }
+
+}
+   
+
+
+
+.left-nav ul {
+    justify-content: flex-start;
+    
+   
+    :nth-child(2) {
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        
+    }
+    :nth-child(3) {
+        border-right: 1px solid white;
+    }
+}
+
+.center-nav ul {
+    justify-content: center;
+}
+
+.right-nav ul {
+    justify-content: flex-end;
+}
+
+//////////////////
+
+.header-bottom {
+    // height: 200%;
+    border-bottom: 1px solid $yellow;
+    background: linear-gradient(to bottom, white 50%, $yellow 50%);
+    ul {
+        color: black;
+        display: flex;
+        font-size: 0.7em;
+        list-style: none;
+        text-transform: uppercase;
+        font-weight: 900;
+        height: 60%;
+       
+        li {
+            
+            cursor: pointer;
+            padding: 0 3%;
+            display: flex;
+            align-items: center;
+            transition: 0.5s;
+            p {
+                display: inline-block;
+            }
+        }
+    }
+    .left-list {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 6em;
+    }
+
+    .right-list {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 6em;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        background: $yellow;
+    }
+
+    .data {
+        display: block;
+        text-align: center;
+        font-size: 0.8em;
+        
+    }
+}

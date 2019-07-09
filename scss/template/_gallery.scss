@@ -1,0 +1,21 @@
+.inside-gallery {
+    margin-top: 2em;
+}
+
+.small-img, .big-img {
+    display: block;
+}
+
+.gallery-button {
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+    button {
+        font-size: 1.2em;
+        background: $yellow;
+        padding: 1em;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+}

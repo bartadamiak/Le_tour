@@ -1,0 +1,67 @@
+.jerseys {
+    margin-top: 2em;
+}
+
+.jersey-img, .rider-img {
+    display: block;
+    width: 70%;
+    height: auto;
+    transition: 0.3s;
+}
+
+.jersey-img {
+    width: 60%;
+}
+
+
+.jersey-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jersey-description {
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1em;
+    padding: 0.6em;
+    text-align: center;
+}
+
+.black-bg {
+    background: black;
+}
+
+.grey-bg {
+    background: rgb(127,127,127);
+
+}
+
+.rider-description {
+    margin-top: 1em;
+    width: 100%;
+    p {
+        width: 100%;
+        display: block;
+        text-align: left;
+        
+    }
+
+}
+
+.rider-name {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+.rider-info {
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    text-transform: uppercase;
+    color: rgb(127,127,127);
+}
