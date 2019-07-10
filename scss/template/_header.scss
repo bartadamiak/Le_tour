@@ -63,12 +63,24 @@
     }
 }
 
+
 .center-nav ul {
     justify-content: center;
 }
 
 .right-nav ul {
     justify-content: flex-end;
+    :nth-child(2) {
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        
+    }
+    :nth-child(3) {
+        border-right: 1px solid white;
+    }
+    :nth-child(4) {
+        border-right: 1px solid white;
+    }
 }
 
 //////////////////
@@ -122,3 +134,4 @@
         
     }
 }
+

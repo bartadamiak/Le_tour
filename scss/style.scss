@@ -14,4 +14,29 @@
 @import "./template/_partners.scss";
 @import "./template/_footer.scss";
 
+/* Media */
 
+@media (max-width: 700px) {
+    
+    .header-top {
+        height: 20px;
+    }
+    .left-nav, .right-nav, .center-nav {
+        display: none;
+    }
+    .left-arrow, .right-arrow {
+        display: none;
+    }
+    .right-list, .left-list {
+        display: none !important;
+    }
+    .jersey-img, .rider-img {
+        width: 40%;
+    }
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
