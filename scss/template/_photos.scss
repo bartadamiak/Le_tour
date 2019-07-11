@@ -6,12 +6,15 @@
 .background-photos {
     width: 100%;
     height: 80vh;
-    background: url('../images/alp.jpg');
+    background: url('../images/cross.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: flex-end;
+    transition: 0.5s;
     i {
         color: white;
     }

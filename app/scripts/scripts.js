@@ -1,24 +1,108 @@
+// agCookie.create('example-cookie', true, 1);
+
+// var readValue = agCookie.read('example-cookie');
+
+// console.log(readValue);
+
+// agCookie.erase('example-cookie');
+
+// function markoFunkcija(args) {
+//     console.log(args);
+
+//     return true;
+// }
+"use strict";
+"use strict";
+"use strict";
 'use strict';
 
-agCookie.create('example-cookie', true, 1);
+var leftArrow = document.querySelector('.left-arrow');
 
-var readValue = agCookie.read('example-cookie');
+var bgPhotos = document.querySelector('.background-photos');
 
-console.log(readValue);
+var rightArrow = document.querySelector('.right-arrow');
 
-agCookie.erase('example-cookie');
+var titleText = document.querySelector('.title p');
 
-function markoFunkcija(args) {
-    console.log(args);
+var photos = ["url('../images/cross.jpg')", "url('../images/jumbo.jpg')", "url('../images/fieldjpg.jpg')"];
 
-    return true;
+var title = ["Alepe d'heuz", "Jumbo wins in Brussel", "Stage for sprinters"];
+
+var counter = 0;
+
+function next() {
+    counter++;
+    if (counter > 2) {
+        counter = 0;
+    };
+    if (counter == 0) {
+        bgPhotos.style.background = photos[0];
+        bgPhotos.style.backgroundSize = "cover";
+        bgPhotos.style.backgroundPosition = "center";
+        bgPhotos.style.backgroundRepeat = "no-repeat";
+        titleText.innerText = title[0];
+    }
+    if (counter == 1) {
+        bgPhotos.style.background = photos[1];
+        bgPhotos.style.backgroundSize = "cover";
+        bgPhotos.style.backgroundPosition = "center";
+        bgPhotos.style.backgroundRepeat = "no-repeat";
+        titleText.innerText = title[1];
+    }
+    if (counter == 2) {
+        bgPhotos.style.background = photos[2];
+        bgPhotos.style.backgroundSize = "cover";
+        bgPhotos.style.backgroundPosition = "center";
+        bgPhotos.style.backgroundRepeat = "no-repeat";
+        titleText.innerText = title[2];
+    }
+};
+
+function previous() {
+    counter--;
+    if (counter < 0) {
+        counter = 2;
+    };
+    if (counter == 0) {
+        bgPhotos.style.background = photos[0];
+        bgPhotos.style.backgroundSize = "cover";
+        bgPhotos.style.backgroundPosition = "center";
+        bgPhotos.style.backgroundRepeat = "no-repeat";
+        titleText.innerText = title[0];
+    }
+    if (counter == 1) {
+        bgPhotos.style.background = photos[1];
+        bgPhotos.style.backgroundSize = "cover";
+        bgPhotos.style.backgroundPosition = "center";
+        bgPhotos.style.backgroundRepeat = "no-repeat";
+        titleText.innerText = title[1];
+    }
+    if (counter == 2) {
+        bgPhotos.style.background = photos[2];
+        bgPhotos.style.backgroundSize = "cover";
+        bgPhotos.style.backgroundPosition = "center";
+        bgPhotos.style.backgroundRepeat = "no-repeat";
+        titleText.innerText = title[2];
+    }
 }
-'use strict';
 
-console.log('I have entered this file.');
-console.log('This is crystal clear evidence that this works.');
+function changeByTime() {
+    setInterval(function () {
+        next();
+    }, 10000);
+}
 
-var calculation = 200 + 223;
+function clickArrow(clickRight, clickLeft) {
+    clickRight.addEventListener('click', function (e) {
+        e.preventDefault;
+        next();
+    });
 
-console.log('Sanity Check: 200 + 223 = ' + calculation);
-console.log('bye.');
+    clickLeft.addEventListener('click', function (e) {
+        e.preventDefault;
+        previous();
+    });
+};
+
+clickArrow(rightArrow, leftArrow);
+changeByTime();
