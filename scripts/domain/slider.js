@@ -8,7 +8,7 @@ const titleText = document.querySelector('.title p');
 
 const photos = ["url('../images/cross.jpg')", "url('../images/jumbo.jpg')", "url('../images/fieldjpg.jpg')"];
 
-const title = ["Alepe d'heuz", "Jumbo wins in Brussel", "Stage for sprinters"];
+const title = ["Alpe d'heuz", "Jumbo wins in Brussel", "Stage for sprinters"];
 
 let counter = 0;
 
@@ -87,6 +87,8 @@ function clickArrow(clickRight, clickLeft) {
         previous();
     })
 };
+
+
 
 
 

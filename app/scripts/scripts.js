@@ -13,7 +13,34 @@
 // }
 "use strict";
 "use strict";
-"use strict";
+'use strict';
+
+var firstPartner = document.querySelector('.first-partner');
+var secondPartner = document.querySelector('.second-partner');
+var thirdPartner = document.querySelector('.third-partner');
+var fourthPartner = document.querySelector('.fourth-partner');
+var fifthPartner = document.querySelector('.fifth-partner');
+var sixthPartner = document.querySelector('.sixth-partner');
+var seventhPartner = document.querySelector('.seventh-partner');
+var eighthPartner = document.querySelector('.eighth-partner');
+
+var partnerCounter = 0;
+
+function partnerLine() {
+    setInterval(function () {
+        partnerCounter++;
+        eighthPartner.appendChild(firstPartner.querySelector('img'));
+        firstPartner.appendChild(secondPartner.querySelector('img'));
+        secondPartner.appendChild(thirdPartner.querySelector('img'));
+        thirdPartner.appendChild(fourthPartner.querySelector('img'));
+        fourthPartner.appendChild(fifthPartner.querySelector('img'));
+        fifthPartner.appendChild(sixthPartner.querySelector('img'));
+        sixthPartner.appendChild(seventhPartner.querySelector('img'));
+        seventhPartner.appendChild(eighthPartner.querySelector('img'));
+    }, 5000);
+}
+
+partnerLine();
 'use strict';
 
 var leftArrow = document.querySelector('.left-arrow');
@@ -26,7 +53,7 @@ var titleText = document.querySelector('.title p');
 
 var photos = ["url('../images/cross.jpg')", "url('../images/jumbo.jpg')", "url('../images/fieldjpg.jpg')"];
 
-var title = ["Alepe d'heuz", "Jumbo wins in Brussel", "Stage for sprinters"];
+var title = ["Alpe d'heuz", "Jumbo wins in Brussel", "Stage for sprinters"];
 
 var counter = 0;
 
